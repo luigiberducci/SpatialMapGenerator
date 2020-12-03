@@ -30,16 +30,16 @@ using namespace std;
 
 struct LGND200Geom{
     // Fiber shrouds
-    const double innerShroudRadius = +175.0;
-    const double outerShroudRadius = +295.0;
-    const double topZShroud        = +845.0;
-    const double bottomZShroud     = -845.0;
+    double innerShroudRadius = +175.0;
+    double outerShroudRadius = +295.0;
+    double topZShroud        = +845.0;
+    double bottomZShroud     = -845.0;
     // Ge Detector
-    const double topZGeStrings     = +425.0;
-    const double bottomZGeStrings  = -425.0;
-    const double radiusGeStrings   = +235.0;
-    const double radGeCrystal      =  +40.0;
-    const int nGeStrings = 14;
+    double topZGeStrings     = +425.0;
+    double bottomZGeStrings  = -425.0;
+    double radiusGeStrings   = +235.0;
+    double radGeCrystal      =  +40.0;
+    int nGeStrings = 14;
     vector<double> geCenters_x;
     vector<double> geCenters_y;
 };

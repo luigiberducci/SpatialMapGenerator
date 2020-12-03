@@ -53,6 +53,19 @@ The following simulation parameters can be customized:
 - `SimConfig.shroudCaptureProb`: the geometric acceptance of fibers volume compared with the ideal cylinder modeled as probability, default pr=0.54 in LGND200
 - `SimConfig.shiftAngleForXYSampling`: sampling angular slice from which produce photons, by symmetry assumptions it is 0.22 in LGND200
 
+For example, you could run:
+```
+$>root
+$>.L createMap.cpp
+$>
+$>SimConfig.attenuationLength = 100.0;          // choose attenuation length
+$>SimConfig.shroudCaptureProb = 0.75;           // choose the prob of acceptance by the shrouds
+$>SimConfig.shiftAngleForXYSampling = 0.22;     // choose the angle shifting from which sample photons
+$>
+$>Int_t nOpticsPerPoint=10000;
+$>createMap(nOpticsPerPoint)
+```
+
 ### Geometry
 The following parameters of the geometry can be customized:
 The fiber shrouds:
