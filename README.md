@@ -1,9 +1,9 @@
 # Spatial Map Generator
 This repo contains the code used to produce approximated maps of hit-angle distributions of photon emission in liquid argon.
 
-![alt text]("doc/inner_map.png?raw=true")
-![alt text]("doc/outer_map.png?raw=true")
-![alt text]("doc/pr_inner_det.png?raw=true")
+![Inner Map](doc/inner_map.png)
+![Outer Map](doc/outer_map.png)
+![Pr. Inner Det. Map](doc/pr_inner_det.png)
 
 # Requirements
 To run this macros, you need to install `ROOT` on your pc.
